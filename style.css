@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --radius: 0.2;
+  --height: 5rem;
+  --textcolor: white;
+  --textpadding: 0.5rem;
+  --textbackground: transparent;
+  --boxbackground: black;
+  --fontfamily: 'Times New Roman', Times, serif;
+}
+
+.header {
+  background: var(--boxbackground);
+  height: 4rem;
+  display: flex;
+  opacity: 0.8;
+}
+
+.text {
+  height: var(--height);
+  color: var(--textcolor);
+  padding: var(--textpadding);
+  border-radius: var(--radius);
+  font-family: var(--fontfamily);
+}
+
+.Bname {
+  display: inline-block;
+  margin: 1rem 0 0 1rem;
+}
+
+.menu {
+  font-size: 0.7rem;
+  margin: -0.5rem 0 0 40%;
+  transform: rotate(90deg);
+}
