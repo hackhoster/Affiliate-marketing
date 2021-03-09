@@ -40,3 +40,54 @@
   margin: -0.5rem 0 0 40%;
   transform: rotate(90deg);
 }
+
+.best-deal>h4 {
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#left-btn,
+#right-btn {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background: grey;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 200px;
+}
+
+#left-btn {
+  top: 200px;
+}
+
+#right-btn {
+  right: 0;
+}
+
+.trand-offer {
+  width: 100vw;
+  height: 12rem;
+  background: lightsalmon;
+  overflow: scroll;
+  display: grid;
+  grid: repeat(1, 12rem) / repeat(3, 360px);
+}
+
+.t-box {
+  background: lightseagreen;
+}
+
+.offer-1 {
+  background: red;
+}
+
+.offer-2 {
+  background: green;
+}
+
+.offer-3 {
+  background: blue;
+}
