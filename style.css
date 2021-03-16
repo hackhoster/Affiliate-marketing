@@ -44,10 +44,20 @@
 
 .buy-product-btn {
   background: #0063B1 !important;
-  border:none;
+  border: none;
+  display: block;
+  margin: 1rem .5rem;
 }
-.my-btn-more{
-  background: white!important;
-  border:none;
+
+.my-btn-more {
+  background: white !important;
+  border: none;
   color: black;
+}
+
+.bi-bag-fill {
+  margin:.2rem;
+}
+
+.dropdown{
 }
