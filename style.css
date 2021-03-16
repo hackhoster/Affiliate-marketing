@@ -52,9 +52,27 @@
 .my-btn-more {
   background: white !important;
   border: none;
-  color: black;
+  color: black !important;
+  outline: none;
 }
 
 .bi-bag-fill {
-  margin:.2rem;
+  margin: .2rem;
+}
+
+.my-dd-menu {
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-left: -10rem;
+
+}
+
+.my-dd-menu-text {
+  font-weight: bold;
+}
+
+.my-dd-menu>svg {
+  position: relative;
+  top: 2rem;
+  left: -2rem;
 }
