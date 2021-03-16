@@ -76,3 +76,18 @@
   top: 2rem;
   left: -2rem;
 }
+
+.related-product-heading {
+  text-align: center;
+  color: white;
+  background: #4364F7;
+  padding: 1rem;
+  width: 100% !important;
+}
+
+.related-product {
+  border: white 50px solid;
+  overflow: hidden;
+}
+
+.related-product-cont {}
