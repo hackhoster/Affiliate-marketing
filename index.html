@@ -1,39 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- viewport related Meta tags -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Search Engine Optimization-->
-  <title>Main page</title>
-  <!-- Connected fils / site-->
-  <link rel="stylesheet" href="style.css" title="stylesheet" type="text/css" />
+  <title>HTML</title>
+  <!--BootStrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.esm.min.js" integrity="sha384-Eg5XYZrb+x0FMnsSAcaUNc6vJ/6B47jQvyhan3IGKcCfko9Hq6vS3s1PviSpNbdE" crossorigin="anonymous"></script>
+  <!--BootStrap-->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!--header-->
-  <header class="header">
-    <span class="Bname text">Discountrade</span>
-    <div class="menu text">
-      <span>•</span>
-      <span>•</span>
-      <span>•</span>
+  <!--Header Start-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://i.ibb.co/nCrpBmr/1615707147375.png" alt="brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Privacy plicy</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search product" aria-label="Search product">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-  </header>
-  <!--Best offer section -->
-  <section class="best-deal">
-    <h4>Best Offers</h4>
-    <!-- left/Right buttons -->
-    <input type="button" id="left-btn" value="<" />
-    <input type="button" id="right-btn" value=">" />
-    <!--trends offer-->
-    <div class="trand-offer">
-      <div class="t-box offer-1"></div>
-      <div class="t-box offer-2"></div>
-      <div class="t-box offer-3"></div>
+  </nav>
+  <!--Header End-->
+  <!--Carousel Start-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/3.jpeg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/3.jpeg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/3.jpeg" alt="Third slide">
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+  <!--Carosoul End-->
+  <!--Product discription start-->
+  <section class="product-discription">
+    <h4 class="p-3 product-name">lorem ipsum ad istum alsch deltas huyes mekus</h4>
+    <!--Product Pricing start-->
+    <div class="container price-theory">
+      <div class="row ">
+        <h5>Price Theory</h5>
+      </div>
+      <div class="row">
+        <span class="col-md- price m-l-2 font-weight-bold">$100</span>
+        <span class="col cut-price m-3 p-l-2 ">Actual Price <br> : <span class="cut-text">$200</span></span>
+        <span class="col dis-price m-3 p-l-2 ">Discount percent : 50%</span>
+      </div>
+      <!--Product Pricing End-->
+      <!--Product Button start-->
+      <a href="#" class="btn btn-primary btn-lg active my-btn " role="button" aria-pressed="true">Compare</a>
+      <a href="#" class="btn btn-primary btn-lg active my-btn buy-product-btn" role="button" aria-pressed="true">Buy Product</a>
+      <!--Product Button End-->
+    </div>
+    <!--Product Highlights start-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="list-group p-3">
+            <li class="list-group-item active">Highlights</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Product Highlights End-->
   </section>
+  <!--Product discription End-->
 </body>
 
 </html>
